@@ -1,0 +1,54 @@
+Meting 1:
+	Start 'open-loop' metingen.
+	Voorbereidingen:
+		- Laat de 3843 controller (U@) uit het IC-voetje.
+		- stel functiegenerator in: 
+			- pulsbreedtemodulatie
+			- 50 kHz
+			- Amplitude van 5V met een 50% offset
+		- Vsupply = 18-20V
+		- Vin = 20V, Iin = max
+		- sluit functiegenerator aan op Vpuls
+		
+	Metingen:
+		1. Meet en noteer de uitgangspanning en stroom van de boostconverter bij: 
+			- dutycycles: 10, 15, 25, 50 , 75%
+			- belasting: onbelast, 56 Ohm, 560 Ohm.
+			
+			D\B	| 0 Ohm	| 56 Ohm | 560 Ohm 	
+			--------------------------------
+			10% | 118V	|  23V	 |  24,8V
+			15%	| 166V	|  24V	 |   28V
+			18% | 190V	| 24,6V  |   30V
+			25% |  		| 26,6V  |  34,4V
+			50% | 		| 31,2V	 |  51,6V
+			75% |       | 16,4V  |/*76,8V*/
+			
+		2. Zet de dutycycle op 30%, sluit de 560 Ohm belasting aan.
+			Meet en noteer de ingangspanning en stroom, en uitgangspanning en stroom.
+			- Vin = 20V, Vsupply = 19V, Vout = 38,4V
+			- Iin = 160mA, Isupply = 6,49mA, Iout = 69mA
+		3. Bereken het rendement van de converter. Mét en zonder eigenverbruik.
+			- Pin = 3,2W, Psupply = 0,12W, Pout = 2,6W
+			- rendement zonder eigenverbruik:
+				n = Pout/Pin = 0,8125 = 81,25%
+			- rendement mét eigenverbruik:
+				n = Pout/(Pin + Psupply) = 0,7831 = 78,31%
+		4. Meet met de scoop de stroom dor de shunt. Wat is er anders aan de golfvorm dan de 
+			golfvorm uit de theorie? 
+			- <insert image: scoopbeelden/cap_meting1_4.png>
+			- 2 snelle pulsen, omdat de diode een beetje tijd nodig heeft om om te schakelen.
+		5. Meet met de scoop de spanning over de mosfet (van drain naar ground) en verklaar de
+			verschillende spanningsniveaus.
+			- <insert image: scoopbeelden/cap_meting1_5.png>
+			- Hoog: Vspoel  + Vin
+			- Semi-hoog: Vin
+			- Laag: 0V, mosfet dicht
+		6. Meet met de scoop de spanning over de spoel en verklaar de verschillende spanningsniveaus.
+			- <insert image: scoopbeelden/cap_meting1_6.png>
+			- NOTE: spanning is geïnverteerd.
+			- Hoog (realiteit laag dus): Vin - Vout, gate open
+			- middel: 0V, gate open 
+			- Laag: Vin, gate is closed
+		7. Converter werkt nu discontinu
+		
