@@ -1,5 +1,5 @@
 Meting 1:
-	Start 'open-loop' metingen.
+	open-loop meting
 	Voorbereidingen:
 		- Laat de 3843 controller (U@) uit het IC-voetje.
 		- stel functiegenerator in: 
@@ -9,46 +9,103 @@ Meting 1:
 		- Vsupply = 18-20V
 		- Vin = 20V, Iin = max
 		- sluit functiegenerator aan op Vpuls
+	1. Meet en noteer de uitgangspanning en stroom van de boostconverter bij: 
+		- dutycycles: 10, 15, 25, 50 , 75%
+		- belasting: onbelast, 56 Ohm, 560 Ohm.
 		
-	Metingen:
-		1. Meet en noteer de uitgangspanning en stroom van de boostconverter bij: 
-			- dutycycles: 10, 15, 25, 50 , 75%
-			- belasting: onbelast, 56 Ohm, 560 Ohm.
-			
-			D\B	| 0 Ohm	| 56 Ohm | 560 Ohm 	
-			--------------------------------
-			10% | 118V	|  23V	 |  24,8V
-			15%	| 166V	|  24V	 |   28V
-			18% | 190V	| 24,6V  |   30V
-			25% |  		| 26,6V  |  34,4V
-			50% | 		| 31,2V	 |  51,6V
-			75% |       | 16,4V  |/*76,8V*/
-			
-		2. Zet de dutycycle op 30%, sluit de 560 Ohm belasting aan.
-			Meet en noteer de ingangspanning en stroom, en uitgangspanning en stroom.
-			- Vin = 20V, Vsupply = 19V, Vout = 38,4V
-			- Iin = 160mA, Isupply = 6,49mA, Iout = 69mA
-		3. Bereken het rendement van de converter. Mét en zonder eigenverbruik.
-			- Pin = 3,2W, Psupply = 0,12W, Pout = 2,6W
-			- rendement zonder eigenverbruik:
-				n = Pout/Pin = 0,8125 = 81,25%
-			- rendement mét eigenverbruik:
-				n = Pout/(Pin + Psupply) = 0,7831 = 78,31%
-		4. Meet met de scoop de stroom dor de shunt. Wat is er anders aan de golfvorm dan de 
-			golfvorm uit de theorie? 
-			- <insert image: scoopbeelden/cap_meting1_4.png>
-			- 2 snelle pulsen, omdat de diode een beetje tijd nodig heeft om om te schakelen.
-		5. Meet met de scoop de spanning over de mosfet (van drain naar ground) en verklaar de
-			verschillende spanningsniveaus.
-			- <insert image: scoopbeelden/cap_meting1_5.png>
-			- Hoog: Vspoel  + Vin
-			- Semi-hoog: Vin
-			- Laag: 0V, mosfet dicht
-		6. Meet met de scoop de spanning over de spoel en verklaar de verschillende spanningsniveaus.
-			- <insert image: scoopbeelden/cap_meting1_6.png>
-			- NOTE: spanning is geïnverteerd.
-			- Hoog (realiteit laag dus): Vin - Vout, gate open
-			- middel: 0V, gate open 
-			- Laag: Vin, gate is closed
-		7. Converter werkt nu discontinu
+		D\B	| 0 Ohm	| 56 Ohm | 560 Ohm 	
+		--------------------------------
+		10% | 118V	|  23V	 |  24,8V
+		15%	| 166V	|  24V	 |   28V
+		18% | 190V	| 24,6V  |   30V
+		25% |  		| 26,6V  |  34,4V
+		50% | 		| 31,2V	 |  51,6V
+		75% |		| 16,4V  |/*76,8V*/
 		
+	2. Zet de dutycycle op 30%, sluit de 560 Ohm belasting aan.
+		Meet en noteer de ingangspanning en stroom, en uitgangspanning en stroom.
+		- Vin = 20V, Vsupply = 19V, Vout = 38,4V
+		- Iin = 160mA, Isupply = 6,49mA, Iout = 69mA
+	3. Bereken het rendement van de converter. Mét en zonder eigenverbruik.
+		- Pin = 3,2W, Psupply = 0,12W, Pout = 2,6W
+		- rendement zonder eigenverbruik:
+			n = Pout/Pin = 0,8125 = 81,25%
+		- rendement mét eigenverbruik:
+			n = Pout/(Pin + Psupply) = 0,7831 = 78,31%
+	4. Meet met de scoop de stroom door de shunt. Wat is er anders aan de golfvorm dan de 
+		golfvorm uit de theorie? 
+		- <insert image: scoopbeelden/cap_meting1_4.png>
+		- 2 snelle hoge pieken, omdat de diode een beetje tijd nodig heeft om om te schakelen.
+	5. Meet met de scoop de spanning over de mosfet (van drain naar ground) en verklaar de
+		verschillende spanningsniveaus.
+		- <insert image: scoopbeelden/cap_meting1_5.png>
+		- Hoog: Vspoel  + Vin
+		- Semi-hoog: Vin
+		- Laag: 0V, mosfet dicht
+	6. Meet met de scoop de spanning over de spoel en verklaar de verschillende spanningsniveaus.
+		- <insert image: scoopbeelden/cap_meting1_6.png>
+		- NOTE: spanning is geïnverteerd.
+		- Hoog (realiteit laag dus): Vin - Vout, gate open
+		- middel: 0V, gate open 
+		- Laag: Vin, gate is closed
+	7. Converter werkt nu discontinu
+
+Meting 2:
+	Voorbereiding:
+		- Sluit de 56 Ohm belasting aan.
+		- Dutycycle op 30%
+	1. Meet en noteer de ingangspanning en stroom, en uitgangspanning en stroom.
+		- Vin = 19,9V, Vsupply = 18,9V, Vout = 27,2V
+		- Iin = 720mA, Isupply = 0,1mA, Iout = 486mA
+	2. Bereken het rendement van de converter. Mét en zonder eigenverbruik.
+		- Pin = 14,33W, Psupply = 1,89W, Pout = 13,22W
+		- rendement zonder eigenverbruik:
+			n = Pout/Pin = 92,25%
+		- rendement met eigenverbruik:
+			n = Pout / (Pin + Psupply) = 81,50%
+	3. Meet met de scoop de stroom door de shunt. Wat is er anders aan de golfvorm dan de 
+		golfvorm uit de theorie?
+		- <insert image: scoopbeelden/cap_meting2_3.png>
+		- Hoge snelle piek, doordat de diode tijd nodig heeft om om te schakelen.
+	4. Meet met de scoop de spanning over de mosfet en verklaar de verschillende spanningsniveaus.
+		- <insert image: scoopbeelden/cap_meting2_4.png>
+		- (licht blauwe lijn)
+		- Hoog: spoel ontlaadt + Vin
+		- Laag: spoel laadt op, dus stroom neemt toe. Hierdoor neemt de Spanning in de shunt toe.
+	5. Meet met de scoop de spanning over de spoel en verklaar de verschillende spanningsniveaus.
+		- <insert image: scoopbeelden/cap_meting2_4.png>
+		- (rode lijn)
+		- Hoog: Vin
+		- Laag: Vin - Vout
+	6. Converter werkt continu.
+	
+Meting 3:
+	closed-loop meting
+	Voorbereiding:
+		- Haal de functiegenerator los en plaats de TL3843 op de print.
+		- Sluit de 560 Ohm belasting aan.
+		- Ingangspanning op 20V en de stroom begrenzing maximaal.
+	1. Meet en noteer de in- en uitgangstroom en spanning en bereken het rendement van de converter.
+		- Vin = 19,9V, Vout = 30,8V
+		- Iin = 90mA, Iout = 55mA
+		- Pin = 1,79W, Pout = 1,69mA
+		- n = Pout/Pin = 94.41%
+	2. Meet de stroom dor de shunt met de scoop. Bekijk de spanning over de shunt.
+		Is de converter nu continu of discontinu?
+		- <insert image: scoopbeelden/cap_meting3_2.png>
+		- Continu
+	3. Sluit de 56 Ohm belasting aan. Draai de ingangspanning langaam omhoog vanaf 10V.
+		Verklaar wat er gebeurt.
+		- <insert image: scoopbeelden/cap_meting3_3a.png>
+		- stroom begrenzing, ingangspanning is te laat om gewenste uitgangspanning te behalen.
+		- <insert image: scoopbeelden/cap_meting3_3b.png>
+		- ingagnspanning hoog genoeg om met de geleverde stroom de gewenste uitgangspanning te behalen.
+
+Meting 4:
+	1. Bepaal aan de hand van de gemeten spanninng en stroom de inductie van de spoel.
+		- Vin = 19,8V
+		- dT = 3,72 us
+		- Ishunt(max) = 1,1/1,1 = 1A, iout = 29,6/56= 546mA
+		- Ishunt = iout + 0,5* ^iL <=> 	^iL = 2*(Ishunt - iout)
+										^iL = 0,94A
+		- L = (1 / ^iL) * Vin * dT = 126 uH
