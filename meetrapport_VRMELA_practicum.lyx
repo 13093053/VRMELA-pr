@@ -70,6 +70,7 @@
 \begin_body
 
 \begin_layout Title
+\noindent
 Meetrapport Vermogenselektronica Boostconverterpracticum
 \begin_inset Newline newline
 \end_inset
@@ -78,6 +79,7 @@ VRMELA
 \end_layout
 
 \begin_layout Author
+\noindent
 Daniël Martoredjo, 13024833
 \begin_inset Newline newline
 \end_inset
@@ -90,10 +92,12 @@ EQ1.a
 \end_layout
 
 \begin_layout Date
+\noindent
 10 Januari 2015
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Newpage cleardoublepage
 \end_inset
 
@@ -101,6 +105,7 @@ EQ1.a
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
@@ -110,6 +115,7 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Newpage clearpage
 \end_inset
 
@@ -117,43 +123,62 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Section
+\noindent
 Doel van de meting
 \end_layout
 
 \begin_layout Standard
+\noindent
 Dit meetrapport is onderdeel van het vak Vermogenselektronica van de opleiding
  Elektrotechniek aan de Haagse Hogeschool.
  In dit rapport gaat het om metingen aan de Boostconverter ontworpen door
  de docent.
  Een boostconverter is een schakeling die een hogere uitgangsspanning maakt
  van zijn ingangsspanning.
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
+
+\begin_inset Newline newline
+\end_inset
+
 Het doel van de metingen is om het principe van een boostconverter te leren
  doorgronden, te leren meten aan schakelende voedingen, te begrijpen wat
  het verschil is tussen continu en discontinu bedrijf van een schakelende
  voeding en dit te leren herkennen.
 \end_layout
 
+\begin_layout Standard
+\noindent
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
+\noindent
 Meetopstelling
 \end_layout
 
 \begin_layout Subsection
+\noindent
 Schakeling boost converter
 \end_layout
 
 \begin_layout Standard
+\noindent
 Figuur 1 toont de schakeling van de boost converter die gebruikt is bij
  de metingen.
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -183,14 +208,17 @@ Schema boost converter
 \end_layout
 
 \begin_layout Standard
+\noindent
 Figuur 2 toont de boost converter die gebruikt is bij de metingen.
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -220,34 +248,41 @@ Top-view boost converter
 \end_layout
 
 \begin_layout Standard
+\noindent
 Er wordt gebruik gemaakt van een functiegenerator, oscilloscoop en twee
  labvoedingen.
 \end_layout
 
 \begin_layout Subsection
+\noindent
 Meetopstelling 1
 \end_layout
 
 \begin_layout Standard
+\noindent
 De volgende meetopstelling hoort bij meting 1 (zie hoofdstuk 2.1).
 \end_layout
 
 \begin_layout Standard
+\noindent
 Het opzetten van deze meetopstelling gaat als volgt:
 \end_layout
 
 \begin_layout Enumerate
+\noindent
 Indien al geplaatst, haal de 3843 controller, U2 (zie Figuur 2), uit zijn
  IC-voetje.
 \end_layout
 
 \begin_layout Enumerate
+\noindent
 Stel de functiegenerator in op pulsbreedte modulatie met een frequentie
  van 50kHz en een Amplitude van 5V met een 50% offset.
  Sluit deze nog niet aan
 \end_layout
 
 \begin_layout Enumerate
+\noindent
 Sluit de eerste labvoeding aan op de 
 \begin_inset Formula $V_{supply}$
 \end_inset
@@ -256,6 +291,7 @@ Sluit de eerste labvoeding aan op de
 \end_layout
 
 \begin_layout Enumerate
+\noindent
 Sluit de tweede labvoeding aan op de 
 \begin_inset Formula $V_{in}$
 \end_inset
@@ -264,6 +300,7 @@ Sluit de tweede labvoeding aan op de
 \end_layout
 
 \begin_layout Enumerate
+\noindent
 Ten slotte wordt de functiegenerator aangesloten op de 
 \begin_inset Formula $V_{puls}$
 \end_inset
@@ -272,18 +309,22 @@ Ten slotte wordt de functiegenerator aangesloten op de
 \end_layout
 
 \begin_layout Subsection
+\noindent
 Meetopstelling 2
 \end_layout
 
 \begin_layout Standard
+\noindent
 De volgende meetopstelling hoort bij meting 2 (zie hoofdstuk 2.2).
 \end_layout
 
 \begin_layout Standard
+\noindent
 Het opzetten van deze meetopstelling gaat als volgt:
 \end_layout
 
 \begin_layout Enumerate
+\noindent
 Sluit de 56Ω belasting aan op de 
 \begin_inset Formula $V_{out}$
 \end_inset
@@ -292,17 +333,20 @@ Sluit de 56Ω belasting aan op de
 \end_layout
 
 \begin_layout Enumerate
+\noindent
 Indien al geplaatst, haal de 3843 controller, U2 (zie Figuur 2), uit zijn
  IC-voetje.
 \end_layout
 
 \begin_layout Enumerate
+\noindent
 Stel de functiegenerator in op pulsbreedte modulatie met een frequentie
  van 50kHz en 30% dutycycle, en een Amplitude van 5V met een 50% offset.
  Sluit deze nog niet aan
 \end_layout
 
 \begin_layout Enumerate
+\noindent
 Sluit de eerste labvoeding aan op de 
 \begin_inset Formula $V_{supply}$
 \end_inset
@@ -311,6 +355,7 @@ Sluit de eerste labvoeding aan op de
 \end_layout
 
 \begin_layout Enumerate
+\noindent
 Sluit de tweede labvoeding aan op de 
 \begin_inset Formula $V_{in}$
 \end_inset
@@ -319,6 +364,7 @@ Sluit de tweede labvoeding aan op de
 \end_layout
 
 \begin_layout Enumerate
+\noindent
 Ten slotte wordt de functiegenerator aangesloten op de 
 \begin_inset Formula $V_{puls}$
 \end_inset
@@ -327,10 +373,12 @@ Ten slotte wordt de functiegenerator aangesloten op de
 \end_layout
 
 \begin_layout Subsection
+\noindent
 Meetopstelling 3
 \end_layout
 
 \begin_layout Enumerate
+\noindent
 Sluit de 56Ω belasting aan op de 
 \begin_inset Formula $V_{out}$
 \end_inset
@@ -339,11 +387,13 @@ Sluit de 56Ω belasting aan op de
 \end_layout
 
 \begin_layout Enumerate
+\noindent
 Indien nog niet geplaatst, plaats de 3843 controller, U2 (zie Figuur 2),
  in zijn IC-voetje.
 \end_layout
 
 \begin_layout Enumerate
+\noindent
 Sluit de eerste labvoeding aan op de 
 \begin_inset Formula $V_{supply}$
 \end_inset
@@ -352,6 +402,7 @@ Sluit de eerste labvoeding aan op de
 \end_layout
 
 \begin_layout Enumerate
+\noindent
 Ten slotte wordt de tweede labvoeding aangesloten op de 
 \begin_inset Formula $V_{in}$
 \end_inset
@@ -359,53 +410,67 @@ Ten slotte wordt de tweede labvoeding aangesloten op de
  en ingesteld in op 20V.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
+\noindent
 De metingen
 \end_layout
 
 \begin_layout Standard
+\noindent
 In dit hoofdstuk worden de metingen en resultaten van deze behandeld.
 \end_layout
 
 \begin_layout Subsection
+\noindent
 Meting 1
 \end_layout
 
 \begin_layout Standard
+\noindent
 De opstelling van deze meting is te vinden in hoofdstuk 2.2.
  
 \end_layout
 
 \begin_layout Subsubsection
+\noindent
 Meting 1.1
 \end_layout
 
 \begin_layout Standard
+\noindent
 Hier wordt er gekeken naar de uitgangsspanning van de boostconverter bij
  de volgende instellingen:
 \end_layout
 
 \begin_layout Itemize
+\noindent
 dutycycle: 10, 15, 25, 50 en 75%
 \end_layout
 
 \begin_layout Itemize
+\noindent
 belasting: onbelast, 56Ω en 560Ω
 \end_layout
 
 \begin_layout Standard
+\noindent
 De resultaten zijn te zien in Tabel 1.
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float table
+placement H
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -705,6 +770,7 @@ R
 \end_layout
 
 \begin_layout Standard
+\noindent
 Er valt op te merken dat bij de onbelaste metingen er tot maximaal 18% dutycycle
  is gemeten.
  Dit is gedaan, omdat de uitgangsspanning hier heel hoog wordt, wat gevaren
@@ -712,10 +778,12 @@ Er valt op te merken dat bij de onbelaste metingen er tot maximaal 18% dutycycle
 \end_layout
 
 \begin_layout Subsubsection
+\noindent
 Meting 1.2
 \end_layout
 
 \begin_layout Standard
+\noindent
 Hier wordt er gekeken naar de in -en uitgangsspanningen en stroomen, wanneer
  de dutycycle op 30% is ingesteld en de 560Ω belasting aan de 
 \begin_inset Formula $V_{out}$
@@ -727,10 +795,12 @@ Hier wordt er gekeken naar de in -en uitgangsspanningen en stroomen, wanneer
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float table
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -914,10 +984,12 @@ P [W]
 \end_layout
 
 \begin_layout Standard
+\noindent
 Met de verkregen resultaten in Tabel 2 worden de volgende rendementen berekend:
 \end_layout
 
 \begin_layout Itemize
+\noindent
 Het rendement zonder eigen verbruik, oftewel zonder de 
 \begin_inset Formula $V_{supply}$
 \end_inset
@@ -930,6 +1002,7 @@ Het rendement zonder eigen verbruik, oftewel zonder de
 \end_layout
 
 \begin_layout Itemize
+\noindent
 Het rendment mét eigen verbruik: 
 \begin_inset Formula $\eta=\frac{P_{out}}{P_{in}+P_{supply}}=78,31\%$
 \end_inset
@@ -938,10 +1011,12 @@ Het rendment mét eigen verbruik:
 \end_layout
 
 \begin_layout Subsubsection
+\noindent
 Meting 1.3
 \end_layout
 
 \begin_layout Standard
+\noindent
 Hier worden met de oscilloscoop de spanningen over de shunt, mosfet en spoel
  gemeten.
 \begin_inset Newline newline
@@ -951,6 +1026,7 @@ Hier worden met de oscilloscoop de spanningen over de shunt, mosfet en spoel
 \end_layout
 
 \begin_layout Standard
+\noindent
 Figuur 3 toont de spanning over de shunt (blauw) en de uitgangsspanning
  (geel).
  De spanning over de shunt wordt gemeten tussen de pin J9 en de ground (zie
@@ -958,7 +1034,9 @@ Figuur 3 toont de spanning over de shunt (blauw) en de uitgangsspanning
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -991,6 +1069,7 @@ Spanning shunt
 \end_layout
 
 \begin_layout Standard
+\noindent
 Er valt op te merken dat er 2 snelle pieken zijn waar te nemen.
  Deze pieken onstaan, doordat de diode tijd nodig heeft om om te schakelen.
 \begin_inset Newline newline
@@ -1000,6 +1079,7 @@ Er valt op te merken dat er 2 snelle pieken zijn waar te nemen.
 \end_layout
 
 \begin_layout Standard
+\noindent
 Figuur 4 toont de spanning over de mosfet (blauwe lijn), de uitgangsspanning
  (geel) en spanning van de puls (paars).
  De spanning over de shunt wordt gemeten tussen de pin J8 en de ground (zie
@@ -1007,7 +1087,9 @@ Figuur 4 toont de spanning over de mosfet (blauwe lijn), de uitgangsspanning
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1040,10 +1122,12 @@ Spanning mosfet
 \end_layout
 
 \begin_layout Standard
+\noindent
 De eerste drie spanningsniveaus van de mosfet is als volgt te verklaren:
 \end_layout
 
 \begin_layout Itemize
+\noindent
 Het eerste spanningsniveau is gelijk aan 
 \begin_inset Formula $V_{spoel}+V_{in}$
 \end_inset
@@ -1052,6 +1136,7 @@ Het eerste spanningsniveau is gelijk aan
 \end_layout
 
 \begin_layout Itemize
+\noindent
 Het tweede spanningsniveau is gelijk aan 
 \begin_inset Formula $V_{in}$
 \end_inset
@@ -1060,6 +1145,7 @@ Het tweede spanningsniveau is gelijk aan
 \end_layout
 
 \begin_layout Itemize
+\noindent
 Het derde spanningsniveau is gelijk aan 
 \begin_inset Formula $0V$
 \end_inset
@@ -1068,6 +1154,7 @@ Het derde spanningsniveau is gelijk aan
 \end_layout
 
 \begin_layout Standard
+\noindent
 Figuur 5 toont de spanning over de spoel (rood-paars) en de uitgangsspanning
  (geel).
  De spanning over de spoel wordt gemeten tussen pin J8 en pin J12.
@@ -1075,7 +1162,9 @@ Figuur 5 toont de spanning over de spoel (rood-paars) en de uitgangsspanning
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1108,10 +1197,12 @@ Spanning spoel
 \end_layout
 
 \begin_layout Standard
+\noindent
 De eerste drie spanningsniveaus van de spoel is als volgt te verklaren:
 \end_layout
 
 \begin_layout Itemize
+\noindent
 Het eerste spanningsniveau is gelijk aan 
 \begin_inset Formula $V_{in}-V_{out}$
 \end_inset
@@ -1120,6 +1211,7 @@ Het eerste spanningsniveau is gelijk aan
 \end_layout
 
 \begin_layout Itemize
+\noindent
 Het tweede spanningsniveau is gelijk aan 
 \begin_inset Formula $V_{in}$
 \end_inset
@@ -1128,6 +1220,7 @@ Het tweede spanningsniveau is gelijk aan
 \end_layout
 
 \begin_layout Itemize
+\noindent
 Het derde spanningsniveau is gelijk aan 
 \begin_inset Formula $0V$
 \end_inset
@@ -1136,24 +1229,29 @@ Het derde spanningsniveau is gelijk aan
 \end_layout
 
 \begin_layout Standard
+\noindent
 Aan de hand van deze resultaten is te concluderen dat de boost converter
  in discontinu mode werkt.
 \end_layout
 
 \begin_layout Subsection
+\noindent
 Meting 2
 \end_layout
 
 \begin_layout Standard
+\noindent
 De opstelling van deze meting is te vinden in hoofdstuk 2.3.
  
 \end_layout
 
 \begin_layout Subsubsection
+\noindent
 Meting 2.1
 \end_layout
 
 \begin_layout Standard
+\noindent
 Hier wordt er gekeken naar de in -en uitgangsspanningen en stroomen, wanneer
  de dutycycle op 30% is ingesteld en de 56Ω belasting aan de 
 \begin_inset Formula $V_{out}$
@@ -1165,7 +1263,9 @@ Hier wordt er gekeken naar de in -en uitgangsspanningen en stroomen, wanneer
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float table
+placement H
 wide false
 sideways false
 status open
@@ -1352,10 +1452,12 @@ P [W]
 \end_layout
 
 \begin_layout Standard
+\noindent
 Met de verkregen resultaten in Tabel 3 worden de volgende rendementen berekend:
 \end_layout
 
 \begin_layout Itemize
+\noindent
 Het rendement zonder eigen verbruik, oftewel zonder de 
 \begin_inset Formula $V_{supply}$
 \end_inset
@@ -1368,6 +1470,7 @@ Het rendement zonder eigen verbruik, oftewel zonder de
 \end_layout
 
 \begin_layout Itemize
+\noindent
 Het rendment mét eigen verbruik: 
 \begin_inset Formula $\eta=\frac{P_{out}}{P_{in}+P_{supply}}=81,50\%$
 \end_inset
@@ -1376,10 +1479,12 @@ Het rendment mét eigen verbruik:
 \end_layout
 
 \begin_layout Subsubsection
+\noindent
 Meting 2.1
 \end_layout
 
 \begin_layout Standard
+\noindent
 Hier worden met de oscilloscoop de spanningen over de shunt, mosfet en spoel
  gemeten.
 \begin_inset Newline newline
@@ -1389,6 +1494,7 @@ Hier worden met de oscilloscoop de spanningen over de shunt, mosfet en spoel
 \end_layout
 
 \begin_layout Standard
+\noindent
 Figuur 6 toont de spanning over de shunt (blauw), de uitgangsspanning (geel)
  en de spanning van de puls (paars).
  De spanning over de shunt wordt gemeten tussen de pin J9 en de ground (zie
@@ -1396,7 +1502,9 @@ Figuur 6 toont de spanning over de shunt (blauw), de uitgangsspanning (geel)
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1429,6 +1537,7 @@ Spanning shunt
 \end_layout
 
 \begin_layout Standard
+\noindent
 Er valt op te merken dat er 2 snelle pieken zijn waar te nemen.
  Deze pieken onstaan, doordat de diode tijd nodig heeft om om te schakelen.
 \begin_inset Newline newline
@@ -1438,6 +1547,7 @@ Er valt op te merken dat er 2 snelle pieken zijn waar te nemen.
 \end_layout
 
 \begin_layout Standard
+\noindent
 Figuur 7 toont de spanning over de mosfet (blauwe lijn), de spanning van
  de puls (paars) en nog een aantal spanningen die hier niet van belang zijn.
  De spanning over de shunt wordt gemeten tussen de pin J8 en de ground (zie
@@ -1445,7 +1555,9 @@ Figuur 7 toont de spanning over de mosfet (blauwe lijn), de spanning van
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1478,10 +1590,12 @@ Spanning mosfet
 \end_layout
 
 \begin_layout Standard
+\noindent
 De eerste twee spanningsniveaus van de mosfet is als volgt te verklaren:
 \end_layout
 
 \begin_layout Itemize
+\noindent
 Het eerste spanningsniveau is gelijk aan 
 \begin_inset Formula $0V$
 \end_inset
@@ -1491,6 +1605,7 @@ Het eerste spanningsniveau is gelijk aan
 \end_layout
 
 \begin_layout Itemize
+\noindent
 Het tweede spanningsniveau is gelijk aan 
 \begin_inset Formula $V_{in}$
 \end_inset
@@ -1500,13 +1615,16 @@ Het tweede spanningsniveau is gelijk aan
 \end_layout
 
 \begin_layout Standard
+\noindent
 Figuur 8 toont de spanning over de spoel (rood), de spanning van de puls
  (paars) en nog een aantal spanningen die hier niet van belang zijn.
  De spanning over de spoel wordt gemeten tussen pin J8 en pin J12.
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1539,10 +1657,12 @@ Spanning spoel
 \end_layout
 
 \begin_layout Standard
+\noindent
 De eerste twee spanningsniveaus van de spoel is als volgt te verklaren:
 \end_layout
 
 \begin_layout Itemize
+\noindent
 Het eerste spanningsniveau is gelijk aan 
 \begin_inset Formula $V_{in}$
 \end_inset
@@ -1552,6 +1672,7 @@ Het eerste spanningsniveau is gelijk aan
 \end_layout
 
 \begin_layout Itemize
+\noindent
 Het tweede spanningsniveau is gelijk aan 
 \begin_inset Formula $V_{in}-V_{out}$
 \end_inset
@@ -1560,31 +1681,38 @@ Het tweede spanningsniveau is gelijk aan
 \end_layout
 
 \begin_layout Standard
+\noindent
 Aan de hand van deze resultaten is te concluderen dat de boost converter
  in continu mode werkt.
 \end_layout
 
 \begin_layout Subsection
+\noindent
 Meting 3
 \end_layout
 
 \begin_layout Standard
+\noindent
 De opstelling van deze meting is te vinden in hoofdstuk 2.4.
  
 \end_layout
 
 \begin_layout Subsubsection
+\noindent
 Meting 3.1
 \end_layout
 
 \begin_layout Standard
+\noindent
 Hier wordt er gekeken naar de in -en uitgangsspanningen en stromen.
  Ook wordt het vermogen van deze berekent.
  In Tabel 4 zijn de resultaten te zien.
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float table
+placement H
 wide false
 sideways false
 status open
@@ -1734,6 +1862,7 @@ P [W]
 \end_layout
 
 \begin_layout Standard
+\noindent
 Met de verkregen resultaten in Tabel 4 wordt de volgende rendement berekend:
  
 \begin_inset Formula $\eta=\frac{P_{out}}{P_{in}}=94,41\%$
@@ -1743,10 +1872,12 @@ Met de verkregen resultaten in Tabel 4 wordt de volgende rendement berekend:
 \end_layout
 
 \begin_layout Subsubsection
+\noindent
 Meting 3.2
 \end_layout
 
 \begin_layout Standard
+\noindent
 Hier worden met de oscilloscoop de spanning over de shunt gemeten.
 \begin_inset Newline newline
 \end_inset
@@ -1755,13 +1886,16 @@ Hier worden met de oscilloscoop de spanning over de shunt gemeten.
 \end_layout
 
 \begin_layout Standard
+\noindent
 Figuur 9 toont de spanning over de shunt (blauw), de uitgangsspanning (geel).
  De spanning over de shunt wordt gemeten tussen de pin J9 en de ground (zie
  figuur 1).
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1794,15 +1928,18 @@ Spanning shunt
 \end_layout
 
 \begin_layout Standard
+\noindent
 Aan de hand van Figuur 9 is te concluderen dat de boost converter in continu
  mode werkt.
 \end_layout
 
 \begin_layout Subsubsection
+\noindent
 Meting 3.3
 \end_layout
 
 \begin_layout Standard
+\noindent
 Hier wordt de 56Ω belasting aangesloten en de ingangsspanning langzaam omhoog
  gedraait vanaf 10V.
  Figuur 10 en 11 toont de spanning over de shunt (blauw) ter gevolge van
@@ -1810,7 +1947,9 @@ Hier wordt de 56Ω belasting aangesloten en de ingangsspanning langzaam omhoog
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1843,7 +1982,9 @@ Spanning shunt
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1876,26 +2017,31 @@ Spanning shunt
 \end_layout
 
 \begin_layout Standard
+\noindent
 Figuur 10 toont aan dat de converter op de stroombegrenzing staat.
  De ingangsspanning is te laag om de gewenste uitgangsspanning te behalen.
 \end_layout
 
 \begin_layout Standard
+\noindent
 Figuur 11 toont aan dat de ingangsspanning hoog genoeg is om met de geleverde
  stroom de gewenste uitgangsspanning te behalen.
 \end_layout
 
 \begin_layout Subsection
+\noindent
 Inductie van de spoel
 \end_layout
 
 \begin_layout Standard
+\noindent
 Aan de hand van de vorige metingen kan de inductie van de spoel bepaald
  worden.
  Dit gaat als volgt:
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Formula $V_{in}=19,8V$
 \end_inset
 
@@ -1903,6 +2049,7 @@ Aan de hand van de vorige metingen kan de inductie van de spoel bepaald
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Formula $dT=3,72\mu s$
 \end_inset
 
@@ -1910,6 +2057,7 @@ Aan de hand van de vorige metingen kan de inductie van de spoel bepaald
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Formula $I_{shunt}=1A$
 \end_inset
 
@@ -1921,6 +2069,7 @@ Aan de hand van de vorige metingen kan de inductie van de spoel bepaald
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Formula $\triangle i_{L}=2*(I_{shunt}-I_{out})=0,94A$
 \end_inset
 
@@ -1928,34 +2077,47 @@ Aan de hand van de vorige metingen kan de inductie van de spoel bepaald
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Formula $L=\frac{1}{\triangle i_{L}}*V_{in}*dT=126\mu H$
 \end_inset
 
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
+\noindent
 Conclusie en aanbevelingen
 \end_layout
 
 \begin_layout Standard
+\noindent
 Bij meting 1 is te concluderen dat de boost converter discontinu werkt.
  Pieken in de spanning van de shunt worden veroorzaakt door de diode die
  tijd nodig heeft om om te schakelen.
 \end_layout
 
 \begin_layout Standard
+\noindent
 Bij meting 2 is te concluderen dat de boost converter continu werkt.
  
 \end_layout
 
 \begin_layout Standard
+\noindent
 Bij meting 3 is te concluderen dat bij een te lage ingangsspanning er een
  stroombegrenzing ontstaat en de converter discontinu werkt.
  Als de ingangsspanning hoog genoeg is werkt de converter continu.
 \end_layout
 
 \begin_layout Standard
+\noindent
 Aan de hand van de metingen is te concluderen dat de spoel inductie 
 \begin_inset Formula $L=126\mu H$
 \end_inset
@@ -1968,6 +2130,7 @@ Aan de hand van de metingen is te concluderen dat de spoel inductie
 \end_layout
 
 \begin_layout Standard
+\noindent
 Zorg ervoor dat de uitgangsspanning niet hoger wordt dan 200V.
  De mosfet, diodes en condensatoren zijn hier niet zo zeer voor bestemd.
  Controleer altijd voordat de ingangsspanningen en de functiegenerator aangeslot
@@ -1976,11 +2139,20 @@ en worden, of er geen kortsluitingen gemaakt worden aan de meet punten.
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
+\noindent
 Referenties
 \end_layout
 
 \begin_layout Standard
+\noindent
 Het schema van de boost converter (Figuur 1) is gemaakt door: L.M.Ensing,
  Direct Current bv
 \end_layout
