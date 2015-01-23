@@ -1866,7 +1866,7 @@ Spanning shunt
 \end_layout
 
 \begin_layout Standard
-Figuur 10 toont aan dat de converter op de stroom begrenzing staat.
+Figuur 10 toont aan dat de converter op de stroombegrenzing staat.
  De ingangsspanning is te laag om de gewenste uitgangsspanning te behalen.
 \end_layout
 
@@ -1876,7 +1876,7 @@ Figuur 11 toont aan dat de ingangsspanning hoog genoeg is om met de geleverde
 \end_layout
 
 \begin_layout Subsection
-Bepalen van de inductie van de spoel
+Inductie van de spoel
 \end_layout
 
 \begin_layout Standard
@@ -1928,8 +1928,51 @@ Aan de hand van de vorige metingen kan de inductie van de spoel bepaald
 Conclusie en aanbevelingen
 \end_layout
 
+\begin_layout Standard
+Bij meting 1 is te concluderen dat de boost converter discontinu werkt.
+ Pieken in de spanning van de shunt worden veroorzaakt door de diode die
+ tijd nodig heeft om om te schakelen.
+\end_layout
+
+\begin_layout Standard
+Bij meting 2 is te concluderen dat de boost converter continu werkt.
+ 
+\end_layout
+
+\begin_layout Standard
+Bij meting 3 is te concluderen dat bij een te lage ingangsspanning er een
+ stroombegrenzing ontstaat en de converter discontinu werkt.
+ Als de ingangsspanning hoog genoeg is werkt de converter continu.
+\end_layout
+
+\begin_layout Standard
+Aan de hand van de metingen is te concluderen dat de spoel inductie 
+\begin_inset Formula $L=126\mu H$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Zorg ervoor dat de uitgangsspanning niet hoger wordt dan 200V.
+ De mosfet, diodes en condensatoren zijn hier niet zo zeer voor bestemd.
+ Controleer altijd voordat de ingangsspanningen en de functiegenerator aangeslot
+en worden, of er geen kortsluitingen gemaakt worden aan de meet punten.
+ Er wordt hier gewerkt met aardig hoge spanningen en stromen.
+ 
+\end_layout
+
 \begin_layout Section
 Referenties
+\end_layout
+
+\begin_layout Standard
+Het schema van de boost converter (Figuur 1) is gemaakt door: L.M.Ensing,
+ Direct Current bv
 \end_layout
 
 \end_body
