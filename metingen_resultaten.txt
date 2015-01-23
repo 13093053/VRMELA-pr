@@ -1,7 +1,7 @@
 Meting 1:
 	open-loop meting
 	Voorbereidingen:
-		- Laat de 3843 controller (U@) uit het IC-voetje.
+		- Laat de 3843 controller (U2) uit het IC-voetje.
 		- stel functiegenerator in: 
 			- pulsbreedtemodulatie
 			- 50 kHz
@@ -20,7 +20,7 @@ Meting 1:
 		18% | 190V	| 24,6V  |   30V
 		25% |  		| 26,6V  |  34,4V
 		50% | 		| 31,2V	 |  51,6V
-		75% |		| 16,4V  |/*76,8V*/
+		75% |		| 16,4V  |	76,8V
 		
 	2. Zet de dutycycle op 30%, sluit de 560 Ohm belasting aan.
 		Meet en noteer de ingangspanning en stroom, en uitgangspanning en stroom.
@@ -88,7 +88,7 @@ Meting 3:
 	1. Meet en noteer de in- en uitgangstroom en spanning en bereken het rendement van de converter.
 		- Vin = 19,9V, Vout = 30,8V
 		- Iin = 90mA, Iout = 55mA
-		- Pin = 1,79W, Pout = 1,69mA
+		- Pin = 1,79W, Pout = 1,69W
 		- n = Pout/Pin = 94.41%
 	2. Meet de stroom dor de shunt met de scoop. Bekijk de spanning over de shunt.
 		Is de converter nu continu of discontinu?

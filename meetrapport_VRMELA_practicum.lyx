@@ -82,7 +82,7 @@ Daniël Martoredjo, 13024833
 \begin_inset Newline newline
 \end_inset
 
-Koen van Vliet, ...
+Koen van Vliet, 13093053
 \begin_inset Newline newline
 \end_inset
 
@@ -141,43 +141,1787 @@ Meetopstelling
 \end_layout
 
 \begin_layout Subsection
-Basisopstelling
+Schakeling boost converter
+\end_layout
+
+\begin_layout Standard
+Figuur 1 toont de schakeling van de boost converter die gebruikt is bij
+ de metingen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schema boost converter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image_meetopstelling/schema.png
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figuur 2 toont de boost converter die gebruikt is bij de metingen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Top-view boost converter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Er wordt gebruik gemaakt van een functiegenerator, oscilloscoop en twee
+ labvoedingen.
 \end_layout
 
 \begin_layout Subsection
 Meetopstelling 1
 \end_layout
 
+\begin_layout Standard
+De volgende meetopstelling hoort bij meting 1 (zie hoofdstuk 2.1).
+\end_layout
+
+\begin_layout Standard
+Het opzetten van deze meetopstelling gaat als volgt:
+\end_layout
+
+\begin_layout Enumerate
+Indien al geplaatst, haal de 3843 controller, U2 (zie Figuur 2), uit zijn
+ IC-voetje.
+\end_layout
+
+\begin_layout Enumerate
+Stel de functiegenerator in op pulsbreedte modulatie met een frequentie
+ van 50kHz en een Amplitude van 5V met een 50% offset.
+ Sluit deze nog niet aan
+\end_layout
+
+\begin_layout Enumerate
+Sluit de eerste labvoeding aan op de 
+\begin_inset Formula $V_{supply}$
+\end_inset
+
+ en stel deze in op 18-20V.
+\end_layout
+
+\begin_layout Enumerate
+Sluit de tweede labvoeding aan op de 
+\begin_inset Formula $V_{in}$
+\end_inset
+
+ en stel deze in op 20V.
+\end_layout
+
+\begin_layout Enumerate
+Ten slotte wordt de functiegenerator aangesloten op de 
+\begin_inset Formula $V_{puls}$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsection
 Meetopstelling 2
+\end_layout
+
+\begin_layout Standard
+De volgende meetopstelling hoort bij meting 2 (zie hoofdstuk 2.2).
+\end_layout
+
+\begin_layout Standard
+Het opzetten van deze meetopstelling gaat als volgt:
+\end_layout
+
+\begin_layout Enumerate
+Sluit de 56Ω belasting aan op de 
+\begin_inset Formula $V_{out}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Indien al geplaatst, haal de 3843 controller, U2 (zie Figuur 2), uit zijn
+ IC-voetje.
+\end_layout
+
+\begin_layout Enumerate
+Stel de functiegenerator in op pulsbreedte modulatie met een frequentie
+ van 50kHz en 30% dutycycle, en een Amplitude van 5V met een 50% offset.
+ Sluit deze nog niet aan
+\end_layout
+
+\begin_layout Enumerate
+Sluit de eerste labvoeding aan op de 
+\begin_inset Formula $V_{supply}$
+\end_inset
+
+ en stel deze in op 18-20V.
+\end_layout
+
+\begin_layout Enumerate
+Sluit de tweede labvoeding aan op de 
+\begin_inset Formula $V_{in}$
+\end_inset
+
+ en stel deze in op 20V.
+\end_layout
+
+\begin_layout Enumerate
+Ten slotte wordt de functiegenerator aangesloten op de 
+\begin_inset Formula $V_{puls}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
 Meetopstelling 3
 \end_layout
 
-\begin_layout Subsection
-Meetopstelling 4
+\begin_layout Enumerate
+Sluit de 56Ω belasting aan op de 
+\begin_inset Formula $V_{out}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Indien nog niet geplaatst, plaats de 3843 controller, U2 (zie Figuur 2),
+ in zijn IC-voetje.
+\end_layout
+
+\begin_layout Enumerate
+Sluit de eerste labvoeding aan op de 
+\begin_inset Formula $V_{supply}$
+\end_inset
+
+ en stel deze in op 18-20V.
+\end_layout
+
+\begin_layout Enumerate
+Ten slotte wordt de tweede labvoeding aangesloten op de 
+\begin_inset Formula $V_{in}$
+\end_inset
+
+ en ingesteld in op 20V.
 \end_layout
 
 \begin_layout Section
 De metingen
 \end_layout
 
+\begin_layout Standard
+In dit hoofdstuk worden de metingen en resultaten van deze behandelt.
+\end_layout
+
 \begin_layout Subsection
 Meting 1
+\end_layout
+
+\begin_layout Standard
+De opstelling van deze meting is te vinden in hoofdstuk 2.2.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Meting 1.1
+\end_layout
+
+\begin_layout Standard
+Hier wordt er gekeken naar de uitgangsspanning van de boostconverter bij
+ de volgende instellingen:
+\end_layout
+
+\begin_layout Itemize
+dutycycle: 10, 15, 25, 50 en 75%
+\end_layout
+
+\begin_layout Itemize
+belasting: onbelast, 56Ω en 560Ω
+\end_layout
+
+\begin_layout Standard
+De resultaten zijn te zien in Tabel 1.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Resultaat van de bovenstaande instellingen
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+d
+\backslash
+R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0Ω
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+56Ω
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+560Ω
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+118V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24,8V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+166V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+190V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24,6V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26,6V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+34,4V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31,2V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+51,6V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+75%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16,4V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+76,8V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Er valt op te merken dat bij de onbelaste metingen er tot maximaal 18% dutycycle
+ is gemeten.
+ Dit is gedaan, omdat de uitgangsspanning hier heel hoog wordt, wat gevaren
+ met zich mee brengt.
+\end_layout
+
+\begin_layout Subsubsection
+Meting 1.2
+\end_layout
+
+\begin_layout Standard
+Hier wordt er gekeken naar de in -en uitgangsspanningen en stroomen, wanneer
+ de dutycycle op 30% is ingesteld en de 560Ω belasting aan de 
+\begin_inset Formula $V_{out}$
+\end_inset
+
+ is aangesloten.
+ Ook wordt het vermogen van deze berekent.
+ In Tabel 2 zijn de resultaten te zien.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Resultaat van de bovenstaande instellingen
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Input
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Supply
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Output
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U [V]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+38,4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I [mA]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+160
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6,49
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+69
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P [W]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Met de verkregen resultaten in Tabel 2 worden de volgende rendementen berekend:
+\end_layout
+
+\begin_layout Itemize
+Het rendement zonder eigen verbruik, oftewel zonder de 
+\begin_inset Formula $V_{supply}$
+\end_inset
+
+: 
+\begin_inset Formula $\eta=\frac{P_{out}}{P_{in}}=81,25\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Het rendment mét eigen verbruik: 
+\begin_inset Formula $\eta=\frac{P_{out}}{P_{in}+P_{supply}}=78,31\%$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Meting 1.3
+\end_layout
+
+\begin_layout Standard
+Hier worden met de oscilloscoop de spanningen over de shunt, mosfet en spoel
+ gemeten.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figuur 3 toont de spanning over de shunt (blauw) en de uitgangsspanning
+ (geel).
+ De spanning over de shunt wordt gemeten tussen de pin J9 en de ground (zie
+ figuur 1).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Spanning shunt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename scoopbeelden/cap_meting1_4.PNG
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Er valt op te merken dat er 2 snelle pieken zijn waar te nemen.
+ Deze pieken onstaan, doordat de diode tijd nodig heeft om om te schakelen.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figuur 4 toont de spanning over de mosfet (blauwe lijn), de uitgangsspanning
+ (geel) en spanning van de puls (paars).
+ De spanning over de shunt wordt gemeten tussen de pin J8 en de ground (zie
+ figuur 1).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Spanning mosfet
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename scoopbeelden/cap_meting1_5.PNG
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De eerste drie spanningsniveaus van de mosfet is als volgt te verklaren:
+\end_layout
+
+\begin_layout Itemize
+Het eerste spanningsniveau is gelijk aan 
+\begin_inset Formula $V_{spoel}+V_{in}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Het tweede spanningsniveau is gelijk aan 
+\begin_inset Formula $V_{in}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Het derde spanningsniveau is gelijk aan 
+\begin_inset Formula $0V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figuur 5 toont de spanning over de spoel (rood-paars) en de uitgangsspanning
+ (geel).
+ De spanning over de spoel wordt gemeten tussen pin J8 en pin J12.
+ Deze spanning is geinverteerd.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Spanning spoel
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename scoopbeelden/cap_meting1_6.PNG
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De eerste drie spanningsniveaus van de spoel is als volgt te verklaren:
+\end_layout
+
+\begin_layout Itemize
+Het eerste spanningsniveau is gelijk aan 
+\begin_inset Formula $V_{in}-V_{out}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Het tweede spanningsniveau is gelijk aan 
+\begin_inset Formula $V_{in}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Het derde spanningsniveau is gelijk aan 
+\begin_inset Formula $0V$
+\end_inset
+
+, de mosfet is hier dicht.
+\end_layout
+
+\begin_layout Standard
+Aan de hand van deze resultaten is te concluderen dat de boost converter
+ in discontinu mode werkt.
 \end_layout
 
 \begin_layout Subsection
 Meting 2
 \end_layout
 
+\begin_layout Standard
+De opstelling van deze meting is te vinden in hoofdstuk 2.3.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Meting 2.1
+\end_layout
+
+\begin_layout Standard
+Hier wordt er gekeken naar de in -en uitgangsspanningen en stroomen, wanneer
+ de dutycycle op 30% is ingesteld en de 56Ω belasting aan de 
+\begin_inset Formula $V_{out}$
+\end_inset
+
+ is aangesloten.
+ Ook wordt het vermogen van deze berekent.
+ In Tabel 3 zijn de resultaten te zien.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Resultaat van de bovenstaande instellingen
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Input
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Supply
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Output
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U [V]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19,9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18,9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27,2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I [mA]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+720
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+486
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P [W]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14,33
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,89
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13,22
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Met de verkregen resultaten in Tabel 3 worden de volgende rendementen berekend:
+\end_layout
+
+\begin_layout Itemize
+Het rendement zonder eigen verbruik, oftewel zonder de 
+\begin_inset Formula $V_{supply}$
+\end_inset
+
+: 
+\begin_inset Formula $\eta=\frac{P_{out}}{P_{in}}=92,25\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Het rendment mét eigen verbruik: 
+\begin_inset Formula $\eta=\frac{P_{out}}{P_{in}+P_{supply}}=81,50\%$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Meting 2.1
+\end_layout
+
+\begin_layout Standard
+Hier worden met de oscilloscoop de spanningen over de shunt, mosfet en spoel
+ gemeten.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figuur 6 toont de spanning over de shunt (blauw), de uitgangsspanning (geel)
+ en de spanning van de puls (paars).
+ De spanning over de shunt wordt gemeten tussen de pin J9 en de ground (zie
+ figuur 1).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Spanning shunt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename scoopbeelden/cap_meting2_3.PNG
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Er valt op te merken dat er 2 snelle pieken zijn waar te nemen.
+ Deze pieken onstaan, doordat de diode tijd nodig heeft om om te schakelen.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figuur 7 toont de spanning over de mosfet (blauwe lijn), de spanning van
+ de puls (paars) en nog een aantal spanningen die hier niet van belang zijn.
+ De spanning over de shunt wordt gemeten tussen de pin J8 en de ground (zie
+ figuur 1).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Spanning mosfet
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename scoopbeelden/cap_meting2_4.PNG
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De eerste twee spanningsniveaus van de mosfet is als volgt te verklaren:
+\end_layout
+
+\begin_layout Itemize
+Het eerste spanningsniveau is gelijk aan 
+\begin_inset Formula $0V$
+\end_inset
+
+.
+ De spoel laadt hier op, dus is te zien dat dit niveau langzaam stijgt.
+\end_layout
+
+\begin_layout Itemize
+Het tweede spanningsniveau is gelijk aan 
+\begin_inset Formula $V_{in}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Figuur 8 toont de spanning over de spoel (rood), de spanning van de puls
+ (paars) en nog een aantal spanningen die hier niet van belang zijn.
+ De spanning over de spoel wordt gemeten tussen pin J8 en pin J12.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Spanning spoel
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename scoopbeelden/cap_meting2_4.PNG
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De eerste twee spanningsniveaus van de spoel is als volgt te verklaren:
+\end_layout
+
+\begin_layout Itemize
+Het eerste spanningsniveau is gelijk aan 
+\begin_inset Formula $V_{in}$
+\end_inset
+
+.
+ De spoel ontlaad hier langzaam.
+\end_layout
+
+\begin_layout Itemize
+Het tweede spanningsniveau is gelijk aan 
+\begin_inset Formula $V_{in}-V_{out}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Aan de hand van deze resultaten is te concluderen dat de boost converter
+ in continu mode werkt.
+\end_layout
+
 \begin_layout Subsection
 Meting 3
 \end_layout
 
+\begin_layout Standard
+De opstelling van deze meting is te vinden in hoofdstuk 2.4.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Meting 3.1
+\end_layout
+
+\begin_layout Standard
+Hier wordt er gekeken naar de in -en uitgangsspanningen en stromen.
+ Ook wordt het vermogen van deze berekent.
+ In Tabel 4 zijn de resultaten te zien.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Resultaat van de bovenstaande instellingen
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Input
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Output
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U [V]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19,9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30,8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I [mA]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+90
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+55
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P [W]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,79
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,69
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Met de verkregen resultaten in Tabel 4 wordt de volgende rendement berekend:
+ 
+\begin_inset Formula $\eta=\frac{P_{out}}{P_{in}}=94,41\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Meting 3.2
+\end_layout
+
+\begin_layout Standard
+Hier worden met de oscilloscoop de spanning over de shunt gemeten.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figuur 9 toont de spanning over de shunt (blauw), de uitgangsspanning (geel).
+ De spanning over de shunt wordt gemeten tussen de pin J9 en de ground (zie
+ figuur 1).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Spanning shunt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename scoopbeelden/cap_meting3_2.PNG
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aan de hand van Figuur 9 is te concluderen dat de boost converter in continu
+ mode werkt.
+\end_layout
+
+\begin_layout Subsubsection
+Meting 3.3
+\end_layout
+
+\begin_layout Standard
+Hier wordt de 56Ω belasting aangesloten en de ingangsspanning langzaam omhoog
+ gedraait vanaf 10V.
+ Figuur 10 en 11 toont de spanning over de shunt (blauw) ter gevolge van
+ deze actie.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Spanning shunt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename scoopbeelden/cap_meting3_3a.PNG
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Spanning shunt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename scoopbeelden/cap_meting3_3b.PNG
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figuur 10 toont aan dat de converter op de stroom begrenzing staat.
+ De ingangsspanning is te laag om de gewenste uitgangsspanning te behalen.
+\end_layout
+
+\begin_layout Standard
+Figuur 11 toont aan dat de ingangsspanning hoog genoeg is om met de geleverde
+ stroom de gewenste uitgangsspanning te behalen.
+\end_layout
+
 \begin_layout Subsection
-Meting 4
+Inductie van de spoel
+\end_layout
+
+\begin_layout Standard
+Aan de hand van de vorige metingen kan de inductie van de spoel bepaald
+ worden.
+ Dit gaat als volgt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{in}=19,8V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dT=3,72\mu s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{shunt}=1A$
+\end_inset
+
+, 
+\begin_inset Formula $I_{out}=546mA$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\triangle i_{L}=2*(I_{shunt}-I_{out})=0,94A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L=\frac{1}{\triangle i_{L}}*V_{in}*dT=126\mu H$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -186,14 +1930,6 @@ Conclusie en aanbevelingen
 
 \begin_layout Section
 Referenties
-\end_layout
-
-\begin_layout Section*
-Bijlage
-\end_layout
-
-\begin_layout Standard
-<insert image schakeling boostconverter>
 \end_layout
 
 \end_body
